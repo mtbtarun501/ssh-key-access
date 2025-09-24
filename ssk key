@@ -1,7 +1,7 @@
-ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ ssh-keygen -t ed25519 -C "mtkmarella008@gmail.com" -f ~/.ssh/id_ed25519_bitbucket_demo2
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ ssh-keygen -t ed25519 -C "mtkmarella008@gmail.com" -f ~/.ssh/id_ed25519_bitbucket_demo2(add new name)
 Generating public/private ed25519 key pair.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty for no passphrase): -----------enter
+Enter same passphrase again: ------------enter
 Your identification has been saved in /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2
 Your public key has been saved in /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2.pub
 The key fingerprint is:
@@ -19,7 +19,7 @@ The key's randomart image is:
 |   o+            |
 +----[SHA256]-----+
 ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519_bitbucket_demo2
+ssh-add ~/.ssh/id_ed25519_bitbucket_demo2(new name edit)
 Agent pid 75562
 Identity added: /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2 (mtkmarella008@gmail.com)
 ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ cat ~/.ssh/id_ed25519_bitbucket_demo2.pub
