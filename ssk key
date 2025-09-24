@@ -1,0 +1,35 @@
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ ssh-keygen -t ed25519 -C "mtkmarella008@gmail.com" -f ~/.ssh/id_ed25519_bitbucket_demo2
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2
+Your public key has been saved in /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2.pub
+The key fingerprint is:
+SHA256:gviXKkllIwNcXyeQuRtFettEi4M4CIPBfcAD67w5f8I mtkmarella008@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|Bo=o..=+ o       |
+|++o+o++.= .      |
+| + oo+o+ o       |
+|o o.=+. =        |
+| o.=..+.S.       |
+|  +. . o         |
+| =... o          |
+|  =E +           |
+|   o+            |
++----[SHA256]-----+
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_bitbucket_demo2
+Agent pid 75562
+Identity added: /home/ubuntu/.ssh/id_ed25519_bitbucket_demo2 (mtkmarella008@gmail.com)
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ cat ~/.ssh/id_ed25519_bitbucket_demo2.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMA8AWjHpMc5RcyXwOL3JN/c7XuxMLU3K5EgNR4CaRIi mtkmarella008@gmail.com
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ git clone git@bitbucket.org:tarunspace/demo-one.git
+Cloning into 'demo-one'...
+remote: Enumerating objects: 76, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (59/59), done.
+remote: Total 76 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (76/76), 72.24 KiB | 391.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ 
