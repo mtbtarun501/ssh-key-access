@@ -118,3 +118,12 @@ git push origin main
 
 
 👉 Do you want me to make a ready-to-use script (just copy-paste in terminal) that will push your project directly to Bitbucket?
+
+
+=========================================================
+git remote -v → repo is linked
+
+ssh -T git@bitbucket.org → SSH key authentication works
+
+git ls-remote origin → confirms access to the repository
+=================================================================
