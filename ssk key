@@ -33,3 +33,10 @@ remote: Total 76 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (76/76), 72.24 KiB | 391.00 KiB/s, done.
 Resolving deltas: 100% (1/1), done.
 ubuntu@ubuntu-Inspiron-15-3567:~/demo2$ 
+=========================================================================================
+step1--to see any ssk is there --------------------------ls -al ~/.ssh
+
+step2----------ssh-keygen -t ed25519 -C "mtkmarella008@gmail.com"
+
+
+step3-----------eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519
